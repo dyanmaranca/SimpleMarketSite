@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="./css/styledm.css">
+    <link rel="stylesheet" href="./css/normalizedm.css">
+    <script src="./script/shopdm.js"></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>My Market</h1>
+        </header>
+        <nav>
+            <a href="./homedm.html">Home</a>
+            <a href="./shopdm.html">Shop</a>
+        </nav>
+        <main>
+            <h2>Shop</h2>
+            <div id="form">
+
+                <div id="error">
+                    <div id="counterror"></div>
+                    <div id="nameerror"></div>
+                    <div id="phoneerror"></div>
+                    <div id="provinceerror"></div>
+                </div>
+
+                <h3>Merchandise List</h3>
+                <form>
+                    <label for="sshirt">Number of T-shirts ($15)</label>
+                    <input type="text" id="sshirt" placeholder="10"><br>
+                    <label for="sjackets">Number of Jackets ($50)</label>
+                    <input type="text" id="sjackets" placeholder="10"><br>
+                    <label for="scaps">Number of Caps ($10)</label>
+                    <input type="text" id="scaps" placeholder="10"><br>
+                </form>
+
+                <h3>Customer Information</h3>
+                <form>
+                    <label for="name">Customer Name</label>
+                    <input type="text" id="name" placeholder="First Last"><br>
+                    <label for="phone">Customer Phone</label>
+                    <input type="text" id="phone" placeholder="(xxx)-xxx-xxxx"><br>
+                    <label for="province">Province</label>
+                    <select id="province">
+                        <option value="">--Please select province--</option>
+                        <option value="Alberta">Alberta</option>
+                        <option value="British Columbia">British Columbia</option>
+                        <option value="Manitoba">Manitoba</option>
+                        <option value="New Brunswick">New Brunswick</option>
+                        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                        <option value="Nova Scotia">Nova Scotia</option>
+                        <option value="Ontario">Ontario</option>
+                        <option value="Prince Edward Island">Prince Edward Island</option>
+                        <option value="Quebec">Quebec</option>
+                        <option value="Saskatchewan">Saskatchewan</option>
+                        <option value="Northwest Territories">Northwest Territories</option>
+                        <option value="Nunavut">Nunavut</option>
+                        <option value="Yukon">Yukon</option>
+                    </select>
+                </form>
+        
+                <button class="checkout" onclick="checkout()">Checkout</button>
+           
+    </main>
+    <footer>
+        <p>&copy; Copyright 2024 by Dyan Maranca</p>
+    </footer>
+</div>
+</body>
+</html>
